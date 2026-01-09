@@ -23,8 +23,8 @@
       <span></span>
     </label>
 
-    <!-- Dynamic Menu -->
-   <?php wp_nav_menu(['theme_location'=>'primary']); ?>
+
+   <?php wp_nav_menu (['theme_location'=>'primary']);?>
 
   </div>
 </header>

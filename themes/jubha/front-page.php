@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
 <link rel="stylesheet" href="">
 
@@ -8,11 +9,24 @@
 <div></div>
 
   <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>Your Health, Our Priority</h1>
-    <p>Compassionate & Comprehensive Care for Every Stage of Life</p>
-    <a href=""><button class="btn">Book an Appointment</button></a>
-  </section>
+ <section class="hero-home" id="home">
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>Jubha Hospital</h1>
+    <h2>Advanced Care, Close to Home</h2>
+    <p>
+      Delivering compassionate and modern healthcare with
+      state-of-the-art medical services for every stage of life.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn-primary">Book Appointment</a>
+      <a href="#" class="btn-outline">Find a Doctor</a>
+    </div>
+  </div>
+</section>
+
 
   <!-- Services Section -->
   <section id="services">
@@ -197,50 +211,205 @@
   </section>
 
 
-<section class="statistics container">
-	<div class="statistics-left">
-		<div class="statistics-item">
-		
-			<svg class="icon-sta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M298.2 72.6C310.5 61.2 329.5 61.2 341.7 72.6L432 156.3L432 144C432 126.3 446.3 112 464 112L496 112C513.7 112 528 126.3 528 144L528 245.5L565.8 280.6C575.4 289.6 578.6 303.5 573.8 315.7C569 327.9 557.2 336 544 336L528 336L528 512C528 547.3 499.3 576 464 576L176 576C140.7 576 112 547.3 112 512L112 336L96 336C82.8 336 71 327.9 66.2 315.7C61.4 303.5 64.6 289.5 74.2 280.6L298.2 72.6zM288 312L288 352L248 352C239.2 352 232 359.2 232 368L232 400C232 408.8 239.2 416 248 416L288 416L288 456C288 464.8 295.2 472 304 472L336 472C344.8 472 352 464.8 352 456L352 416L392 416C400.8 416 408 408.8 408 400L408 368C408 359.2 400.8 352 392 352L352 352L352 312C352 303.2 344.8 296 336 296L304 296C295.2 296 288 303.2 288 312z"/></svg>
-				<p>6500 <br>
-				<span>QAULIFIED <br>
-			WORKFORCE</span>
-			</p>
-		</div>
-		<div class="statistics-item">
-		
-		<svg class="icon-sta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M298.2 72.6C310.5 61.2 329.5 61.2 341.7 72.6L432 156.3L432 144C432 126.3 446.3 112 464 112L496 112C513.7 112 528 126.3 528 144L528 245.5L565.8 280.6C575.4 289.6 578.6 303.5 573.8 315.7C569 327.9 557.2 336 544 336L528 336L528 512C528 547.3 499.3 576 464 576L176 576C140.7 576 112 547.3 112 512L112 336L96 336C82.8 336 71 327.9 66.2 315.7C61.4 303.5 64.6 289.5 74.2 280.6L298.2 72.6zM288 312L288 352L248 352C239.2 352 232 359.2 232 368L232 400C232 408.8 239.2 416 248 416L288 416L288 456C288 464.8 295.2 472 304 472L336 472C344.8 472 352 464.8 352 456L352 416L392 416C400.8 416 408 408.8 408 400L408 368C408 359.2 400.8 352 392 352L352 352L352 312C352 303.2 344.8 296 336 296L304 296C295.2 296 288 303.2 288 312z"/></svg>
-				<p>6500 <br>
-				<span>QAULIFIED <br>
-			WORKFORCE</span>
-			</p>
-		</div>
-		<div class="statistics-item">
-		
-		<svg class="icon-sta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M298.2 72.6C310.5 61.2 329.5 61.2 341.7 72.6L432 156.3L432 144C432 126.3 446.3 112 464 112L496 112C513.7 112 528 126.3 528 144L528 245.5L565.8 280.6C575.4 289.6 578.6 303.5 573.8 315.7C569 327.9 557.2 336 544 336L528 336L528 512C528 547.3 499.3 576 464 576L176 576C140.7 576 112 547.3 112 512L112 336L96 336C82.8 336 71 327.9 66.2 315.7C61.4 303.5 64.6 289.5 74.2 280.6L298.2 72.6zM288 312L288 352L248 352C239.2 352 232 359.2 232 368L232 400C232 408.8 239.2 416 248 416L288 416L288 456C288 464.8 295.2 472 304 472L336 472C344.8 472 352 464.8 352 456L352 416L392 416C400.8 416 408 408.8 408 400L408 368C408 359.2 400.8 352 392 352L352 352L352 312C352 303.2 344.8 296 336 296L304 296C295.2 296 288 303.2 288 312z"/></svg>
-				<p>6500 <br>
-				<span>QAULIFIED <br>
-			WORKFORCE</span>
-			</p>
-	</div>
-	<div class="statistics-item">
-		
-		<svg class="icon-sta" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path fill="#ffffff" d="M298.2 72.6C310.5 61.2 329.5 61.2 341.7 72.6L432 156.3L432 144C432 126.3 446.3 112 464 112L496 112C513.7 112 528 126.3 528 144L528 245.5L565.8 280.6C575.4 289.6 578.6 303.5 573.8 315.7C569 327.9 557.2 336 544 336L528 336L528 512C528 547.3 499.3 576 464 576L176 576C140.7 576 112 547.3 112 512L112 336L96 336C82.8 336 71 327.9 66.2 315.7C61.4 303.5 64.6 289.5 74.2 280.6L298.2 72.6zM288 312L288 352L248 352C239.2 352 232 359.2 232 368L232 400C232 408.8 239.2 416 248 416L288 416L288 456C288 464.8 295.2 472 304 472L336 472C344.8 472 352 464.8 352 456L352 416L392 416C400.8 416 408 408.8 408 400L408 368C408 359.2 400.8 352 392 352L352 352L352 312C352 303.2 344.8 296 336 296L304 296C295.2 296 288 303.2 288 312z"/></svg>
-				<p>6500 <br>
-				<span>QAULIFIED <br>
-			WORKFORCE</span>
-			</p>
-	</div>
-		
-	</div>
-	
-	<div class="statistics-right">
-	<h3 class="section-title" style="font-size:20px;">Statistics</h3>
-	<h6>We provide specialized units in various medical specialties</h6>
-	<p>A continuation of a series of successes in the Group, we provide specialized units in various medical specialties, where will meet the caregivers and the modern medical equipment to serve the community and people</p>
-	 </div>
+<section class="stats-section">
+  <div class="stats-overlay"></div>
 
+  <div class="stats-container">
+    <!-- Left stats cards -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <h2>6500</h2>
+        <p>Qualified<br>Workforce</p>
+      </div>
+      <div class="stat-card">
+        <h2>800</h2>
+        <p>Specialized<br>Doctors</p>
+      </div>
+      <div class="stat-card">
+        <h2>8</h2>
+        <p>Medical<br>Facilities</p>
+      </div>
+      <div class="stat-card">
+        <h2>1300</h2>
+        <p>Total<br>Beds</p>
+      </div>
+    </div>
+
+    <!-- Right content -->
+    <div class="stats-content">
+      <span class="label">STATISTICS</span>
+      <h1>Jubha Hospital at a Glance</h1>
+      <p>
+        We provide specialized units in various medical specialties.
+        Jubha Hospital combines experienced caregivers and modern
+        medical equipment to serve the community with excellence.
+      </p>
+
+      <a href="#" class="stats-btn">Our Branches →</a>
+    </div>
+  </div>
 </section>
 
+<section class="dept-section">
+  <div class="dept-header">
+    <div>
+      <span>DEPARTMENTS</span>
+      <h2>Jubha Hospital Centers of Excellence</h2>
+    </div>
+    <a href="#" class="dept-link">All Departments →</a>
+  </div>
+
+  <div class="dept-cards">
+    <div class="dept-card" style="background-image:url('https://images.unsplash.com/photo-1588776814546-12b6e1916a63?auto=format&fit=crop&w=1200&q=80')">
+      <div class="dept-overlay"></div>
+      <div class="dept-content">
+        <h3>Anesthesiology</h3>
+        <p>Advanced pain control and surgical care</p>
+      </div>
+	  <div class="dept-arrow">→</div>
+
+    </div>
+
+    <div class="dept-card" style="background-image:url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80')">
+      <div class="dept-overlay"></div>
+      <div class="dept-content">
+        <h3>Cardiac Surgery</h3>
+        <p>World-class heart care and diagnostics</p>
+      </div>
+	  <div class="dept-arrow">→</div>
+
+    </div>
+
+    <div class="dept-card" style="background-image:url('https://images.unsplash.com/photo-1580281658629-0cb43b8e1215?auto=format&fit=crop&w=1200&q=80')">
+      <div class="dept-overlay"></div>
+      <div class="dept-content">
+        <h3>Cath Lab</h3>
+        <p>Minimally invasive cardiac procedures</p>
+      </div>
+	  <div class="dept-arrow">→</div>
+    </div>
+  </div>
+</section>
+<section class="news-section">
+  <div class="news-header">
+    <span>MEDIA UPDATE</span>
+    <h2>Latest Happenings</h2>
+  </div>
+  <div class="news-grid">
+    <!-- Featured -->
+    <div class="news-card featured">
+      <div class="news-img" style="background-image:url('https://i.pinimg.com/736x/5e/21/d5/5e21d565ce8b0d413f32fd029cee9dbf.jpg')"></div>
+      <div class="news-content">
+        <span class="tag">SPECIALIZED CARE</span>
+        <h3>Home Healthcare Service</h3>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="news-card">
+      <div class="news-img" style="background-image:url('https://images.unsplash.com/photo-1584118624012-df056829fbd0?auto=format&fit=crop&w=1200&q=80')"></div>
+      <div class="news-content">
+        <span class="tag">MEDICAL ENCYCLOPEDIA</span>
+        <h3>Signs of a Weak Immune System</h3>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+    <!-- Card 3 -->
+    <div class="news-card">
+      <div class="news-img" style="background-image:url('https://i.pinimg.com/1200x/e2/67/42/e2674284ddc5ee99e69514acc9582dd3.jpg')"></div>
+      <div class="news-content">
+        <span class="tag">MEDICAL ENCYCLOPEDIA</span>
+        <h3>Leukemia Symptoms, Causes & Treatment</h3>
+        <a href="#">Read More →</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="branches">
+  <div class="branches-container">
+    <div class="branches-header">
+      <span>OUR NETWORK</span>
+      <h2>Branches</h2>
+      <p>Hospital Locations</p>
+    </div>
+
+    <div class="branches-grid">
+
+      <div class="branch-card">
+        <h3>Jubha Central Hospital</h3>
+        <p>Dangkoa, Pnhom Penh</p>
+        <a href="#">View on Map →</a>
+      </div>
+
+      <div class="branch-card">
+        <h3>Jubha Medical Center</h3>
+        <p>Saang, Kandal</p>
+        <a href="#">View on Map →</a>
+      </div>
+
+      <div class="branch-card">
+        <h3>Jubha Specialized Clinic</h3>
+        <p>Phnom, Preah Vihear</p>
+        <a href="#">View on Map →</a>
+      </div>
+
+      <div class="branch-card">
+        <h3>Jubha Women & Children</h3>
+        <p>Thring, Battambang</p>
+        <a href="#">View on Map →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="departments">
+  <div class="dept-header">
+    <span>DEPARTMENTS</span>
+    <h2>8 Decades of Excellence</h2>
+  </div>
+
+  <div class="dept-grid">
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-x-ray"></i></div>
+      <h3>Cardiology</h3>
+    </div>
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-brain"></i></div>
+      <h3>Neurology</h3>
+    </div>
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-bone"></i></div>
+      <h3>Orthopedics</h3>
+    </div>
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-baby"></i></div>
+      <h3>Pediatrics</h3>
+    </div>
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-eye"></i></div>
+      <h3>Ophthalmology</h3>
+    </div>
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-disease"></i></div>
+      <h3>Oncology</h3>
+    </div>
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-teeth"></i></div>
+      <h3>Dental Care</h3>
+    </div>
+
+    <div class="dept-card">
+      <div class="dept-icon"><i class="fa-solid fa-stethoscope"></i></div>
+      <h3>Internal Medicine</h3>
+    </div>
+  </div>
+</section>
 
 <?php get_footer();?>   

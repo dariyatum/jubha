@@ -1,0 +1,141 @@
+:root{
+    --text--colo-- :#9a7787;
+    --backgroun--color--section :#9a7787;
+    --sometime--use--it :#e4afb0;
+    --background-- :#fed7bf;
+}
+.backgroun_contact_page__compaint{
+    background-color: #9a7787;
+    position: absolute ;
+    width: 98.9%;
+    height: 300px;
+    color: aliceblue;
+}
+.text_background_contact-page__compaint{
+    position: relative;
+    display: block;
+    margin-left: 100px;
+    margin-top: 130px;
+    font-size: 42px;
+}
+.Get_in_Touch_background_contact-page__compaint p{
+    background-color: #fed7bf;
+    width: 490px;   
+    text-align: center;
+    border-radius: 5px;
+}
+.Get_in_Touch_background_contact-page__compaint{
+    display: flex;
+    font-size: 24px;
+}
+
+
+.tittle__text__getintouch__compaint{
+    margin-top: 300px;
+    display: flex;
+    padding: 10px;
+}
+.tittle__text__getintouch__compaint h1{
+    margin: auto;
+    font-size: 42px;
+    color: #000000;
+}
+
+.p__text__ingetintouch__compaint{
+    display: flex;
+    justify-content: center;
+}
+.p__text__ingetintouch__compaint p{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.form__cotact__getintouch__compaint{
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    background-color: #fdf6f7;
+    width: 90%;
+    border-radius: 10px;
+}
+
+
+.form__cotact__getintouch__compaint form{
+    display: block;
+}
+.form__cotact__getintouch__compaint div{
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+.form__cotact__getintouch__compaint div select{
+    padding: 10px;
+    width: 500px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+.form__cotact__getintouch__compaint div input{
+    padding: 10px;
+    width: 500px;
+    border-radius: 2px;
+    transition: 1s;
+    color: #000000;
+}
+.form__cotact__getintouch__compaint div input:hover{
+    padding: 13px;
+    width: 500px;
+    border-radius: 2px;
+    background-color: #e4afb0;
+    transition: 0.5s;
+    color: #ffffff;
+}
+.select {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.buttom_in__compaint{
+    padding: 10px;
+    width: 150px;
+    display: grid;
+    color: var(--text--colo--);
+    background-color: #ffffff;
+    font-size: 18px;
+    border-color: var(--background--);
+    transition: 0.5s;
+    transform: scale();
+    transform: scale3d();
+}
+.buttom_in__compaint:hover{
+    padding: 10px;
+    width: 150px;
+    display: grid;
+    color: var(--text--colo--);
+    background-color: #ffffff;
+    font-size: 18px;
+    border-color: var(--background--);
+    transition: 0.5s;
+    transform: scale(1.1);
+    transform: scale3d(1.1);
+}
+
+.message{
+    padding: 0 10px;
+    width: 500px;
+    border-radius: 2px;
+    background-color: #fdfdfd;
+    transition: 0s;
+    height: 100px;
+    color: #000000;
+}
+.message:hover{
+    padding: 0 13px;
+    width: 500px;
+    border-radius: 2px;
+    background-color: #e4afb0;
+    transition: 0s;
+    color: #000000;
+    height: 100px;
+}
+
+

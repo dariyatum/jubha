@@ -271,3 +271,27 @@
     height: 100px;
     border-radius: 2px;
 }
+.buttom_in_get_in_touch{
+    padding: 10px;
+    width: 150px;
+    display: grid;
+    color: var(--text--colo--);
+    background-color: #ffffff;
+    font-size: 18px;
+    border-color: var(--background--);
+    transition: 0.5s;
+    transform: scale();
+    transform: scale3d();
+}
+.buttom_in_get_in_touch:hover{
+    padding: 10px;
+    width: 150px;
+    display: grid;
+    color: var(--text--colo--);
+    background-color: #ffffff;
+    font-size: 18px;
+    border-color: var(--background--);
+    transition: 0.5s;
+    transform: scale(1.1);
+    transform: scale3d(1.1);
+}

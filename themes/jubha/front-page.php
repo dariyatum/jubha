@@ -21,8 +21,8 @@
     </p>
 
     <div class="hero-buttons">
-      <a href="#" class="btn-primary">Book Appointment</a>
-      <a href="#" class="btn-outline">Find a Doctor</a>
+      <a href="<?php echo site_url('/book-an-appointment'); ?>" class="btn-primary">Book Appointment</a>
+      <a href="<?php echo site_url('/find-the-doctor'); ?>" class="btn-outline">Find a Doctor</a>
     </div>
   </div>
 </section>

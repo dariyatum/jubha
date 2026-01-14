@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="wp-content/themes/jubha/stylesheet/footer.css">
+
+
 
 
 
@@ -69,3 +70,6 @@
     </div>
   </div>
 </footer>
+<?php wp_footer(); ?>
+</body>
+</html>

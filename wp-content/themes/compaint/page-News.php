@@ -51,7 +51,7 @@
             </h2>
             <p>
                 In a medical achievement we take great pride in, our surgical team at Almana Hospital in Dammam, led by spinal
-                <br> surgery consultant Dr. Ahmed Hamed Amin, successfully performed a complex scoliosis correction surgery for
+                <br> surgery consultant Dr. Ahmed Hamed Amin,successfull yperformed a complex scoliosis correction surgery for
                 <br> a 14-year-old girl suffering from an advanced spinal curvature exceeding 54 degrees.
             </p>
             <a href="">

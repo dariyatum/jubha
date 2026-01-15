@@ -2,7 +2,7 @@
 /*
 Plugin Name: Dynamic Cat Manager
 Description: Adds a custom post type "Cat" with image, title, body, and read more link.
-Version: 1.0
+Version: 1.3
 Author: koem sothearith
 */
 
@@ -30,7 +30,7 @@ function dcm_register_cat_cpt() {
         'supports' => array('title', 'editor', 'thumbnail'),
         'has_archive' => true,
         'menu_icon' => 'dashicons-palmtree',
-        'show_in_rest' => true, // Enable Gutenberg editor
+        'show_in_rest' => true,
     );
 
     register_post_type('cat', $args);
@@ -43,24 +43,54 @@ function dcm_setup_theme_support() {
 }
 add_action('after_setup_theme', 'dcm_setup_theme_support');
 
-// Enqueue inline CSS styles
+// Enqueue inline CSS styles with horizontal scroll
 function dcm_enqueue_inline_styles() {
     if (!is_admin()) {
         $custom_css = "
         .dcm-cats-wrapper {
             display: flex;
-            flex-wrap: wrap;
+            flex-wrap: nowrap; /* No wrapping */
             gap: 20px;
-            margin-left: 0px;
-            margin-right: 0px;
+            overflow-x: auto; /* Horizontal scroll */
+            padding: 10px 0;
+            -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+        }
+        /* Optional: hide scrollbar for webkit browsers */
+        .dcm-cats-wrapper::-webkit-scrollbar {
+            height: 8px;
+        }
+        .dcm-cats-wrapper::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .dcm-cats-wrapper::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
+        }
+        .dcm-cats-wrapper::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        .dcm-cat-item {
+            flex: 0 0 auto; /* Fixed width, don’t shrink */
+            border: 1px solid #000000ff;
+            padding: 10px;
+            width: 250px;
+            background-color: #ffffff;
+            box-sizing: border-box;
+            transition: 0.3s;
+            text-align: center;
+        }
+        .dcm-cat-item:hover {
+            border-color: #f9f9f9ff;
+            background-color: #dcdcdcff;
+            color: #000000ff;
         }
         .dcm-cat-title {
-            color: e4afb0;
+            color: #e4afb0;
             font-size: 1.5rem;
             font-weight: bold;
             margin-bottom: 10px;
             font-family: Arial, sans-serif;
-            text-align: center;
         }
         .dcm-cat-readmore {
             display: inline-block;
@@ -72,38 +102,16 @@ function dcm_enqueue_inline_styles() {
             text-decoration: underline;
         }
         .dcm-cat-image {
-            text-align: center;
             margin-bottom: 10px;
         }
         .dcm-cat-image img {
-            max-width: 200px;
+            max-width: 100%;
             height: 200px;
-            display: inline-block;
-            transition: 0.3s;
+            object-fit: cover;
+            transition: transform 0.3s ease;
         }
         .dcm-cat-image img:hover {
-            max-width: 220px;
-            height: 200px;
-            display: inline-block;
             transform: scale(1.1);
-            transition: 0.3s;
-        }
-        .dcm-cat-item {
-            border: 1px solid #000000ff;
-            padding: 10px;
-            width: 250px;
-            box-sizing: border-box;
-            background-color: #ffffff;
-            transition: 0.3s;
-        }
-        .dcm-cat-item:hover {
-            border: 1px solid #f9f9f9ff;
-            padding: 10px;
-            width: 250px;
-            box-sizing: border-box;
-            background-color: #dcdcdcff;
-            transition: 0.3s;
-            color:  #000000ff;
         }
         .dcm-cat-date {
             font-size: 0.9rem;
@@ -112,10 +120,7 @@ function dcm_enqueue_inline_styles() {
             font-style: italic;
         }
         .dcm-cat-date:hover {
-            font-size: 0.9rem;
             color: #000000ff;
-            margin-top: 5px;
-            font-style: italic;
         }
         ";
         wp_add_inline_style('wp-block-library', $custom_css);
@@ -123,10 +128,10 @@ function dcm_enqueue_inline_styles() {
 }
 add_action('wp_enqueue_scripts', 'dcm_enqueue_inline_styles');
 
-// Shortcode to display all cats
+// Shortcode to display cats
 function dcm_display_cats_shortcode($atts) {
     $atts = shortcode_atts(array(
-        'posts_per_page' => 5,
+        'posts_per_page' => 10,  // increased default to show more cards in scroll
     ), $atts, 'show_cats');
 
     $args = array(
@@ -149,7 +154,7 @@ function dcm_display_cats_shortcode($atts) {
         $title = get_the_title();
         $content = wp_trim_words(get_the_content(), 30, '...');
         $read_more_link = get_permalink();
-        $date_time = get_the_date('F j, Y \a\t g:i a'); // Example: January 14, 2026 at 10:22 am
+        $date_time = get_the_date('F j, Y \a\t g:i a');
 
         $output .= '<div class="dcm-cat-item">';
         if ($img) {

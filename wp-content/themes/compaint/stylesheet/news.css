@@ -105,7 +105,7 @@
     padding: 20px;
 }
 .Photo_and_info_in_news img{
-    width: 800px;
+    width: 600px;
     padding: 0px;
     height: 300px;
 }
@@ -115,14 +115,21 @@
 .Photo_and_info_in_news div h2{
     text-align: center;
     margin-top: 50px;
-    margin-left: 150px;
+    margin-left: 0px;
 }
 .Photo_and_info_in_news div p{
     text-align: start;
-    margin-left: 150px;
+    margin-left: 0px;
 }
 .Photo_and_info_in_news div a{
-    margin-left: 150px; 
+    margin-left: 00px; 
+    text-decoration: none;
+    color: blue;
+}
+.Photo_and_info_in_news div a:hover{
+    margin-left: 00px; 
+    text-decoration: underline;
+    color: blue;
 }
 .titlle_news{
     display: flex;

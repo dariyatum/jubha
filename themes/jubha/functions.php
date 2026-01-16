@@ -208,5 +208,3 @@ function jubha_load_css() {
         time()
     );
 }
-add_action('wp_enqueue_scripts', 'jubha_load_css');
-

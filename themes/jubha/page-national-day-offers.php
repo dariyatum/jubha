@@ -127,7 +127,7 @@ get_header();
   <section class="national-day-hero">
     <h1>🎉 Jubha Hospital National Day Offer!</h1>
     <p>Celebrate National Day with special health check-up packages and discounts!</p>
-    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="cta-button">Book Your Check-Up</a>
+    <a href="<?php echo site_url('/book-an-appointment'); ?>" class="cta-button">Book Your Check-Up</a>
   </section>
 
   <!-- Offer Details Section -->

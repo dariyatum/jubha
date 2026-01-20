@@ -1,0 +1,106 @@
+:root{
+    --text--colo-- :#9a7787;
+    --backgroun--color--section :#9a7787;
+    --sometime--use--it :#e4afb0;
+    --background-- :#fed7bf;
+    --one:#FED7BF;
+    --two:#e4afb0;
+    --three:#9a7787;
+}
+.backgroun_page_culture{
+    background: linear-gradient(135deg, var(--three), var(--two));
+    position: absolute ;
+    width: 100%;
+    height: 300px;
+    color: aliceblue;
+}
+.text_background_page_culture{
+    position: relative;
+    display: block;
+    margin-left: 100px;
+    font-size: 42px;
+}
+.page_culture__text p{
+    background-color: #fed7bf;
+    width: 450px;   
+    text-align: center;
+    border-radius: 5px;
+}
+.page_culture__text{
+    display: flex;
+    font-size: 24px;
+}
+
+
+.box_vition_misstion{
+    margin-top: 300px;  
+    width: 100%;
+    display: flex;
+}
+.vition_misstion{
+    display: flex;
+    margin: auto;
+}
+.viton{
+    display: block;
+    width: 400px;
+    background-color: #ffe3d4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    
+}
+.viton h3{
+    text-align: center;
+    font-size: 24px;
+    color: #8A7A81;
+}
+.viton h4{
+    text-align: start;
+    margin-left: 40px;
+    font-size: 18px ;
+}
+.misstion{
+    background-color: #fbdac6;
+    width: 900px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.misstion h3{
+    text-align: center;
+    font-size: 24px;
+    color: #ffffff;
+}
+.misstion h4{
+    margin-left: 40px;
+    text-align: start;
+    font-size: 18px;
+}
+.misstion h5{
+    font-size: 16px;
+    margin-left: 40px;
+    text-align: start;
+}
+.text_Our_Values{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+.Our_Values{
+    display: block;
+}
+.box_vlue{
+    margin-left: 90px;
+    display: block;
+    margin-right: 90px;
+}
+.Our_Values h3{
+    font-size: 24px;
+    text-align: start;
+}
+.Our_Values p{
+    font-size: 18px;
+}

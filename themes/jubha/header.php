@@ -2,6 +2,7 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
   <?php wp_head(); ?>
 </head>
 
@@ -23,11 +24,19 @@
 
     <!-- Menu -->
    <?php wp_nav_menu(['theme_location' => 'primary']); ?>
-  </div>
+<div class="register">
+  <a href="<?php echo site_url('/signup'); ?>">
+    <i class="fa-solid fa-user"></i>
+  </a>
+</div>
+<div class="nav-actions">
+  <a href="<?php echo site_url('/book-an-appointment'); ?>" class="calendar-btn">
+    <i class="fa-solid fa-calendar"></i>
+  </a>
+</div>
+
 </header>
 
-<nav class="bottom-nav">
-   <a href=""></a> 
-</nav>
+
 </div>
 

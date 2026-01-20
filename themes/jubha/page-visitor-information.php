@@ -5,7 +5,7 @@
   <section class="national-day-hero">
     <h1>Visitor Information</h1>
     <p>Jubha Hospital</p>
-    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="cta-button">Book Your Check-Up</a>
+    <a href="<?php echo esc_url(home_url('/book-an-appointment')); ?>" class="cta-button">Book Your Check-Up</a>
   </section>
   <section class="visitor_info">
     <div class="info">

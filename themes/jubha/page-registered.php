@@ -5,10 +5,8 @@ Template Name: Book an Appointment
 
 get_header();
 global $wpdb;
-
 // Handle form submissions
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
     if (isset($_POST['add_patient'])) {
         $wpdb->insert($wpdb->prefix . 'baa_patients', [
             'name' => sanitize_text_field($_POST['name']),
@@ -63,24 +61,12 @@ $appointments = $wpdb->get_results("
 .baa-table th, .baa-table td { border: 1px solid #ccc; padding: 8px; text-align: left; }
 .baa-table th { background: #eee; }
 .baa-success { padding: 10px; background: #d4edda; color: #155724; border-radius: 5px; margin-bottom: 15px; }
+
 </style>
 
 <div class="baa-container">
 
-    <!-- Patients Section -->
-    <div class="baa-section">
-        <h2>Patients</h2>
-        <form method="post" class="baa-form">
-            <table>
-                <tr><th>Name</th><td><input name="name" required></td></tr>
-                <tr><th>Phone</th><td><input name="phone" required></td></tr>
-                <tr><th>DOB</th><td><input type="date" name="dob" required></td></tr>
-            </table>
-            <input type="submit" name="add_patient" value="Add Patient">
-        </form>
 
-        
-    </div>
 
     <!-- Appointments Section -->
     <div class="baa-section">
@@ -133,3 +119,6 @@ $appointments = $wpdb->get_results("
 </div>
 
 <?php get_footer(); ?>
+<style>
+    
+</style>

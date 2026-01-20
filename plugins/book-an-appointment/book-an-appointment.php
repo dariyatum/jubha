@@ -47,7 +47,19 @@ function baa_create_tables() {
         created_at datetime DEFAULT CURRENT_TIMESTAMP,
         PRIMARY KEY (id)
     ) $charset_collate;");
-    
+    $accounts = $wpdb->prefix . 'baa_accounts';
+
+dbDelta("CREATE TABLE $accounts (
+    id mediumint(9) NOT NULL AUTO_INCREMENT,
+    name varchar(100) NOT NULL,
+    email varchar(100) NOT NULL,
+    phone varchar(20),
+    password varchar(255) NOT NULL,
+    created_at datetime DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    UNIQUE KEY email (email)
+) $charset_collate;");
+
 }
 
 register_activation_hook(__FILE__, 'baa_create_tables');
@@ -115,6 +127,7 @@ function baa_patient_page() {
             <div class="notice notice-success"><p>Saved successfully!</p></div>
         <?php endif; ?>
 
+        <h2>Add Patient (Admin)</h2>
         <form method="post">
             <?php wp_nonce_field('baa_add_patient'); ?>
             <table class="form-table">
@@ -127,8 +140,11 @@ function baa_patient_page() {
 
         <hr>
 
+        <h2>All Patients</h2>
         <table class="widefat striped">
-            <thead><tr><th>ID</th><th>Name</th><th>Phone</th><th>DOB</th></tr></thead>
+            <thead><tr>
+                <th>ID</th><th>Name</th><th>Phone</th><th>DOB</th><th>Source</th><th>Registered At</th>
+            </tr></thead>
             <tbody>
                 <?php foreach ($patients as $p) : ?>
                 <tr>
@@ -136,6 +152,8 @@ function baa_patient_page() {
                     <td><?= esc_html($p->name) ?></td>
                     <td><?= esc_html($p->phone) ?></td>
                     <td><?= esc_html($p->dob) ?></td>
+                    <td><?= esc_html($p->source ?? '-') ?></td>
+                    <td><?= esc_html($p->created_at ?? '-') ?></td>
                 </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -143,17 +161,32 @@ function baa_patient_page() {
     </div>
 <?php }
 
-/* HANDLE PATIENT */
+// Handle Admin Add Patient
 add_action('admin_init', function () {
     if (!isset($_POST['add_patient'])) return;
     check_admin_referer('baa_add_patient');
 
     global $wpdb;
-    $wpdb->insert($wpdb->prefix . 'baa_patients', [
-        'name' => sanitize_text_field($_POST['name']),
-        'phone' => sanitize_text_field($_POST['phone']),
-        'dob' => sanitize_text_field($_POST['dob']),
-    ]);
+
+    $name  = sanitize_text_field($_POST['name']);
+    $phone = sanitize_text_field($_POST['phone']);
+    $dob   = sanitize_text_field($_POST['dob']);
+
+    // Avoid duplicate phone numbers
+    $exists = $wpdb->get_var($wpdb->prepare(
+        "SELECT COUNT(*) FROM {$wpdb->prefix}baa_patients WHERE phone=%s",
+        $phone
+    ));
+
+    if (!$exists) {
+        $wpdb->insert($wpdb->prefix . 'baa_patients', [
+            'name' => $name,
+            'phone' => $phone,
+            'dob' => $dob,
+            'source' => 'admin',
+            'created_at' => current_time('mysql'),
+        ]);
+    }
 
     wp_redirect(admin_url('admin.php?page=baa-patients&success=1'));
     exit;
@@ -306,7 +339,6 @@ add_action('admin_init', function () {
     wp_redirect(admin_url('admin.php?page=baa-appointments&success=1'));
     exit;
 });
-register_activation_hook(__FILE__, 'daa_create_table');
 add_action('baa_user_registered', function ($account_id) {
     global $wpdb;
 
@@ -326,3 +358,4 @@ add_action('baa_user_registered', function ($account_id) {
         ]);
     }
 });
+

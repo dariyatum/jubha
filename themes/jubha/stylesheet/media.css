@@ -1,0 +1,190 @@
+:root{
+    --text--colo-- :#9a7787;
+    --backgroun--color--section :#9a7787;
+    --sometime--use--it :#e4afb0;
+    --background-- :#fed7bf;
+    --one:#FED7BF;
+    --two:#e4afb0;
+    --three:#9a7787;
+}
+
+.page_Medical__text p{
+    background-color: #fed7bf;
+    width: 450px;   
+    text-align: center;
+    border-radius: 5px;
+}
+.page_Medical__text{
+    display: flex;
+    font-size: 24px;
+}
+.box__selech__year{
+    width: 90%;
+    margin: auto;
+    background-color: #fdf6f7;
+    text-align: center;
+    border-radius: 5px;
+}
+.selech__year h1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: auto;
+}
+.selech__year form{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.selech__year form input{
+    width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+.selech__year form input:hover{
+    width: 600px;
+    padding: 11px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+.selech__year form select{
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.selech__year form button{
+    width:150px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #ffffff;
+    border-color: #000000;
+    transition: 0.3s;
+    color: var(--text--colo--);
+}
+.selech__year form button:hover{
+    width:150px;
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--background--);
+    border-color: #000000;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+
+
+.box_video{
+    width: 400px;
+    height:300px;
+    margin-left: 70px;
+    overflow: hidden;
+    background-color: var(--backgroun--color--section);
+    display: grid;
+}
+.box_video:hover{
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    background-color: none;
+}
+.video{
+ 
+    display: block;
+    transition: 0.3s;
+    color: var(--text--colo--);
+    width: 400px;
+    height: 450px;
+    background-image: url("http://jubha.test/wp-content/uploads/2026/01/bone.jpg");
+    background-color: #ffffff;
+    opacity: 0.9;
+
+}
+.video:hover{
+    display: block;
+    background-image: url("http://jubha.test/wp-content/uploads/2026/01/bone.jpg");
+    color: var(--text--colo--);
+    width: 400px;
+    height: 100%;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.video-text{
+    background-color: var(--background--);
+    width: 100%;
+    text-align: start;
+    top: 400px;
+    position: sticky;
+    height: 45%;
+}
+.video-text div{
+    margin-left: 10px;
+}
+.video-text  div h6{
+    font-size: 16px;
+    color: var(--text--colo--);
+}
+.video-text div h5{
+    font-size: 18px;
+    color: #000000;
+}
+.video-text div p a{
+    text-decoration: none;
+}
+.video-text div p a:hover{
+    text-decoration: underline;
+}
+.box_and_box{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 70px;
+}
+
+
+
+.Photo_and_info_in_news{
+    display: flex;
+    margin: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+    gap: 50px;
+    background-color: #fdf6f7;
+    color: var(--text--colo--);
+    padding: 20px;
+}
+.Photo_and_info_in_news img{
+    width: 600px;
+    padding: 0px;
+    height: 300px;
+}
+.Photo_and_info_in_news div{
+    display: block; 
+}
+.Photo_and_info_in_news div h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 0px;
+}
+.Photo_and_info_in_news div p{
+    text-align: start;
+    margin-left: 0px;
+}
+.Photo_and_info_in_news div a{
+    margin-left: 00px; 
+    text-decoration: none;
+    color: blue;
+}
+.Photo_and_info_in_news div a:hover{
+    margin-left: 00px; 
+    text-decoration: underline;
+    color: blue;
+}

@@ -207,4 +207,24 @@ function jubha_load_css() {
         [],
         time()
     );
+    function baa_frontend_styles() {
+    wp_enqueue_style(
+        'baa-appointment-style',
+        get_template_directory_uri() . '/stylesheet/appointment.css',
+        [],
+        '1.0'
+    );
+}
+add_action('wp_enqueue_scripts', 'baa_frontend_styles');
+function baa_frontend_styles() {
+    wp_enqueue_style(
+        'baa-appointment-style',
+        get_template_directory_uri() . '/stylesheet/appointment.css',
+        [],
+        '1.0'
+    );
+}
+add_action('wp_enqueue_scripts', 'baa_frontend_styles');
+
+
 }

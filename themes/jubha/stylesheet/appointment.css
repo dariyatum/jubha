@@ -1,0 +1,184 @@
+/* ===============================
+   GLOBAL APPOINTMENT STYLES
+================================ */
+.baa-container,
+.baa-booking,
+.baa-list {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.baa-container h2,
+.baa-booking h2,
+.baa-list h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #222;
+    text-align: center;
+}
+
+/* ===============================
+   FORM STYLES
+================================ */
+.baa-container form,
+.baa-booking form {
+    display: grid;
+    gap: 15px;
+}
+
+.baa-container input,
+.baa-booking input,
+.baa-booking select {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.baa-container input:focus,
+.baa-booking input:focus,
+.baa-booking select:focus {
+    outline: none;
+    border-color: #0073aa;
+    box-shadow: 0 0 0 2px rgba(0,115,170,0.15);
+}
+
+/* ===============================
+   BUTTONS
+================================ */
+.baa-btn,
+.baa-container input[type="submit"],
+.baa-booking input[type="submit"] {
+    background: linear-gradient(135deg, #0073aa, #005177);
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+.baa-btn:hover,
+.baa-container input[type="submit"]:hover,
+.baa-booking input[type="submit"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* ===============================
+   ALERTS & MESSAGES
+================================ */
+.baa-error {
+    background: #fdecea;
+    color: #842029;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.baa-success {
+    background: #e6f4ea;
+    color: #1e4620;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* ===============================
+   TABLE (APPOINTMENT LIST)
+================================ */
+.baa-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.baa-list th {
+    background: #f5f7fa;
+    padding: 14px;
+    text-align: left;
+    font-weight: 600;
+    color: #333;
+}
+
+.baa-list td {
+    padding: 14px;
+    border-top: 1px solid #eee;
+    font-size: 15px;
+}
+
+.baa-list tr:hover {
+    background: #f9fbff;
+}
+
+/* ===============================
+   LOCKED STATE (NOT LOGGED IN)
+================================ */
+.baa-locked {
+    text-align: center;
+    padding: 30px;
+    background: #fff3cd;
+    border-radius: 10px;
+    color: #664d03;
+}
+
+.baa-locked a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    padding: 12px 18px;
+    background: #0073aa;
+    color: #fff;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.baa-locked a:hover {
+    background: #005177;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    .baa-container,
+    .baa-booking,
+    .baa-list {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .baa-list table,
+    .baa-list thead,
+    .baa-list tbody,
+    .baa-list th,
+    .baa-list td,
+    .baa-list tr {
+        display: block;
+    }
+
+    .baa-list tr {
+        margin-bottom: 15px;
+        border-radius: 10px;
+        background: #fafafa;
+        padding: 10px;
+    }
+
+    .baa-list th {
+        display: none;
+    }
+
+    .baa-list td {
+        border: none;
+        padding: 8px 10px;
+    }
+}

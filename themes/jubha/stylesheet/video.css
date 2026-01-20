@@ -1,0 +1,170 @@
+:root{
+    --text--colo-- :#9a7787;
+    --backgroun--color--section :#9a7787;
+    --sometime--use--it :#e4afb0;
+    --background-- :#fed7bf;
+    --one:#FED7BF;
+    --two:#e4afb0;
+    --three:#9a7787;
+}
+.backgroun_page_video{
+    background: linear-gradient(135deg, var(--three), var(--two));
+    position: absolute ;
+    width: 100%;
+    height: 300px;
+    color: aliceblue;
+}
+.text_background_page_video{
+    position: relative;
+    display: block;
+    margin-left: 100px;
+    margin-top: 130px;
+    font-size: 42px;
+}
+.page_video__text p{
+    background-color: #fed7bf;
+    width: 300px;   
+    text-align: center;
+    border-radius: 5px;
+}
+.page_video__text{
+    display: flex;
+    font-size: 24px;
+}
+.box__selech__year{
+    width: 90%;
+    margin: auto;
+    background-color: #fdf6f7;
+    margin-top: 300px;
+    text-align: center;
+    border-radius: 5px;
+}
+.selech__year h1{
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin: auto;
+}
+.selech__year form{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.selech__year form input{
+    width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+.selech__year form input:hover{
+    width: 600px;
+    padding: 11px;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+    transition: 0.3s;
+}
+.selech__year form select{
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-color: #000000;
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+.selech__year form button{
+    width:150px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #ffffff;
+    border-color: #000000;
+    transition: 0.3s;
+    color: var(--text--colo--);
+}
+.selech__year form button:hover{
+    width:150px;
+    font-size: 12px;
+    text-align: center;
+    background-color: var(--background--);
+    border-color: #000000;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.box_video{
+    width: 600px;
+    height: 300px;
+    margin-left: 70px;
+    overflow: hidden;
+    background-color: var(--backgroun--color--section);
+    display: grid;
+}
+.box_video:hover{
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    background-color: none;
+
+}
+.video{
+ 
+    display: block;
+    transition: 0.3s;
+    color: var(--text--colo--);
+    width: 600px;
+    height: 100%;
+    background-image: url("http://jubha.test/wp-content/uploads/2026/01/bone.jpg");
+    background-color: #ffffff;
+    opacity: 0.9;
+
+}
+.video:hover{
+    display: block;
+    background-image: url("http://jubha.test/wp-content/uploads/2026/01/bone.jpg");
+    color: var(--text--colo--);
+    width: 600px;
+    height: 100%;
+
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.video-text{
+    background-color: var(--background--);
+    width: 300px;
+    position: sticky;
+    height: auto;
+    overflow: hidden;
+}
+.video-text h3{
+    margin: 0;
+    font-size: 16px;
+    text-align: start;
+}
+.video-text h1{
+    font-size: 18px;
+    text-align: center;
+}
+.box_and_box{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 70px;
+}
+.icon{
+    text-align: center  ;
+    margin-top: 90px;
+    font-size: 32px;
+    color: #ffffff;
+}
+.icon:hover{
+    text-align: center;
+    margin-top: 90px;
+    font-size: 32px;
+    color: #ffffff;
+}
+.icon a{
+    color: #ffffff;
+}

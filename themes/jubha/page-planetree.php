@@ -3,7 +3,7 @@
  <section class="national-day-hero">
     <h1>Planetree</h1>
     <p>Jubha Hospital</p>
-    <a href="<?php echo esc_url(home_url('/contact')); ?>" class="cta-button">Book Your Check-Up</a>
+    <a href="<?php echo esc_url(home_url('/book-an-appointment')); ?>" class="cta-button">Book Your Check-Up</a>
   </section>
 
   <section class="inpatient">
@@ -112,6 +112,52 @@
 }
 
 /* Hero Section */
+.national-day-hero {
+ background: linear-gradient(135deg, var(--three), var(--two));
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+
+.national-day-hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+ background: linear-gradient(135deg, var(--three), var(--two));
+}
+
+.national-day-hero h1 {
+  font-size: 40px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 15px;
+}
+
+.national-day-hero p {
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+
+.national-day-hero .cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--two);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.national-day-hero .cta-button:hover {
+  background-color: #fff;
+  color:var(--two);
+}/* Hero Section */
 .national-day-hero {
  background: linear-gradient(135deg, var(--three), var(--two));
   color: #fff;
